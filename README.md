@@ -4,12 +4,13 @@ cloned from https://github.com/yhenon/keras-frcnn/
 
 
 
-USAGE:
-- Both theano and tensorflow backends are supported. However compile times are very high in theano, and tensorflow is highly recommended.
-- `train_frcnn.py` can be used to train a model. To train on Pascal VOC data, simply do:
-`python train_frcnn.py -p /path/to/pascalvoc/`. 
-- the Pascal VOC data set (images and annotations for bounding boxes around the classified objects) can be obtained from: http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
-- simple_parser.py provides an alternative way to input data, using a text file. Simply provide a text file, with each
+Tools used:
+- Theano
+- TensorFlow
+- the file `train_frcnn.py` can be used to train a model. 
+- `python train_frcnn.py -p /path/to/pascalvoc/` can be used to train a model on the Pascal VOC dataset. 
+- the Pascal VOC dataset (images and annotations for bounding boxes around the classified objects) can be obtained from: http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
+- the simple_parser.py provides an alternative way to input data, using a text file. Simply provide a text file, with each
 line containing:
 
     `filepath,x1,y1,x2,y2,class_name`
