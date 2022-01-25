@@ -23,11 +23,9 @@ Running codes:
 
     - for example:
 
-    /data/imgs/img_001.jpg,563,54,944,554, advanced
-    
-    /data/imgs/img_002.jpg,443,203,590,600, normal
-    
-    /data/imgs/img_003.jpg,3,20,340,410, normal
+        - /data/imgs/img_001.jpg,563,54,944,554, advanced
+        - /data/imgs/img_002.jpg,443,203,590,600, normal
+        - /data/imgs/img_003.jpg,3,20,340,410, normal
 
     - to use the simple parser, add the following tag to the command line: `-o simple`. 
     - for example if training_data.txt is the input config file, then run `python train_frcnn.py -o simple -p training_data.txt`.
