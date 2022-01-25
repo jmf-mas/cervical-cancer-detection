@@ -18,7 +18,7 @@ Data sets
 - VoTT (Visual Object Tagging Tool) can be used for image annotations.
 
 Running codes:
-- the file `train_frcnn.py` can be used to train a model. 
+- `train_frcnn.py` can be used to train a model. 
 - `python train_frcnn.py -p /path/to/pascalvoc/` can be used to train a model on the Pascal VOC dataset. 
 - `simple_parser.py` provides an alternative way to input data, using a text file. 
     - to use a file parser, format an input config file (e.g. text file) in the following: `filepath,x1,y1,x2,y2,class_name`
@@ -30,7 +30,7 @@ Running codes:
         - `/data/imgs/img_003.jpg,3,20,340,410, normal`
 
     - to use the simple parser, add the following tag to the command line: `-o simple`. 
-    - for example if `training_data.txt` is the input config file, then run `python train_frcnn.py -o simple -p training_data.txt`.
+    - for example if `training_data.txt` is the input config file, then run `python train_frcnn.py -o simple -p training.csv`.
 
 - running `train_frcnn.py` will write weights to disk to an hdf5 file, as well as all the setting of the training run to a `pickle` file. 
 - these settings can then be loaded by `test_frcnn.py` for any testing.
