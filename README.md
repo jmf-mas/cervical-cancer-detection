@@ -12,6 +12,7 @@ Tools and default dataset used:
 Data sets
 - Pascal VOC dataset (images and annotations for bounding boxes around the classified objects) [can be obtained here](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar).
 - Cervical images. This data set still needs to be annotated to accomodate this coding framework. As it will be described below, this annotation can be xml or plain text. 
+- VoTT (Visual Object Tagging Tool) can be used for image annotations.
 
 Running codes:
 - the file `train_frcnn.py` can be used to train a model. 
