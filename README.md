@@ -45,3 +45,7 @@ Settings:
 - `config.py` contains settings for the training and testing. 
 - the anchor box sizes are [128, 256, 512] and the ratios are [1:1, 1:2, 2:1].
 - the theano backend by default uses a 7x7 pooling region.
+
+Next steps:
+- Cervical cancer images annotations
+- Replacement of default data set (Pascal VOC) by the cervical images.
