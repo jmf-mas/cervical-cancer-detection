@@ -1,34 +1,36 @@
 # keras-frcnn
-Keras implementation of Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks.
-cloned from https://github.com/yhenon/keras-frcnn/
-
-
+Keras implementation of [Faster R-CNN with region proposal networks](https://github.com/yhenon/keras-frcnn/)
 
 Tools and default dataset used:
 - Theano
 - TensorFlow
-- - the Pascal VOC dataset (images and annotations for bounding boxes around the classified objects) [can be obtained here](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
-)
+- Cuda
+- OpenCV
+- Keras
+
+Data sets
+- Pascal VOC dataset (images and annotations for bounding boxes around the classified objects) [can be obtained here](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar).
+- Cervical images. This data set still needs to be annotated to accomodate this coding framework. As it will be described below, this annotation can be xml or plain text. 
+
 Running codes:
 - the file `train_frcnn.py` can be used to train a model. 
 - `python train_frcnn.py -p /path/to/pascalvoc/` can be used to train a model on the Pascal VOC dataset. 
-
-- the simple_parser.py provides an alternative way to input data, using a text file. Simply provide a text file, with each
-line containing:
+- the simple_parser.py provides an alternative way to input data, using a text file. 
+    - to use a file parser, format an input config file (e.g. text file) in the following:
 
     `filepath,x1,y1,x2,y2,class_name`
 
-    For example:
+    - for example:
 
-    /data/imgs/img_001.jpg,837,346,981,456,cow
-    
-    /data/imgs/img_002.jpg,215,312,279,391,cat
+    /data/imgs/img_001.jpg,563,54,944,554, advanced
+    /data/imgs/img_002.jpg,443,203,590,600, normal
+    /data/imgs/img_003.jpg,3,20,340,410, normal
 
-    The classes will be inferred from the file. To use the simple parser instead of the default pascal voc style parser,
-    use the command line option `-o simple`. For example `python train_frcnn.py -o simple -p my_data.txt`.
+    - to use the simple parser, add the following tag to the command line: `-o simple`. 
+    - for example if training_data.txt is the input config file, then run `python train_frcnn.py -o simple -p training_data.txt`.
 
-- Running `train_frcnn.py` will write weights to disk to an hdf5 file, as well as all the setting of the training run to a `pickle` file. These
-settings can then be loaded by `test_frcnn.py` for any testing.
+- running `train_frcnn.py` will write weights to disk to an hdf5 file, as well as all the setting of the training run to a `pickle` file. 
+- these settings can then be loaded by `test_frcnn.py` for any testing.
 
 - test_frcnn.py can be used to perform inference, given pretrained weights and a config file. Specify a path to the folder containing
 images:
