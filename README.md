@@ -1,5 +1,8 @@
 # early stage of keras-frcnn for cervical cancer screening
-Keras implementation of [Faster R-CNN with region proposal networks](https://github.com/yhenon/keras-frcnn/)
+
+- orginal code source can be found [here](https://github.com/kbardool/keras-frcnn)
+- Keras implementation of [Faster R-CNN with region proposal networks](https://github.com/yhenon/keras-frcnn/)
+- multiple changes were made to accomodate with versions of tools used here.
 
 Tools and default dataset used:
 - Python 3
