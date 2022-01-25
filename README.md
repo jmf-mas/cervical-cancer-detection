@@ -17,15 +17,13 @@ Running codes:
 - the file `train_frcnn.py` can be used to train a model. 
 - `python train_frcnn.py -p /path/to/pascalvoc/` can be used to train a model on the Pascal VOC dataset. 
 - the simple_parser.py provides an alternative way to input data, using a text file. 
-    - to use a file parser, format an input config file (e.g. text file) in the following:
-
-    `filepath,x1,y1,x2,y2,class_name`
+    - to use a file parser, format an input config file (e.g. text file) in the following: `filepath,x1,y1,x2,y2,class_name`
 
     - for example:
 
-        - /data/imgs/img_001.jpg,563,54,944,554, advanced
-        - /data/imgs/img_002.jpg,443,203,590,600, normal
-        - /data/imgs/img_003.jpg,3,20,340,410, normal
+        - `/data/imgs/img_001.jpg,563,54,944,554, advanced`
+        - `/data/imgs/img_002.jpg,443,203,590,600, normal`
+        - `/data/imgs/img_003.jpg,3,20,340,410, normal`
 
     - to use the simple parser, add the following tag to the command line: `-o simple`. 
     - for example if training_data.txt is the input config file, then run `python train_frcnn.py -o simple -p training_data.txt`.
