@@ -49,3 +49,4 @@ Settings:
 Next steps:
 - Cervical cancer images annotations
 - Replacement of default data set (Pascal VOC) by the cervical images.
+- Predictions on new images. This will require classification task as in [the benchmark paper](https://academic.oup.com/jnci/article/111/9/923/5272614).
