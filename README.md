@@ -4,12 +4,15 @@ cloned from https://github.com/yhenon/keras-frcnn/
 
 
 
-Tools used:
+Tools and default dataset used:
 - Theano
 - TensorFlow
+- - the Pascal VOC dataset (images and annotations for bounding boxes around the classified objects) [can be obtained here](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
+)
+Running codes:
 - the file `train_frcnn.py` can be used to train a model. 
 - `python train_frcnn.py -p /path/to/pascalvoc/` can be used to train a model on the Pascal VOC dataset. 
-- the Pascal VOC dataset (images and annotations for bounding boxes around the classified objects) can be obtained from: http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
+
 - the simple_parser.py provides an alternative way to input data, using a text file. Simply provide a text file, with each
 line containing:
 
