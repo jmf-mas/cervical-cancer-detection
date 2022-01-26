@@ -1,4 +1,4 @@
-# early stage of keras-frcnn for cervical cancer screening
+# Early stage of keras-frcnn for cervical cancer screening
 
 - orginal code source can be found [here](https://github.com/kbardool/keras-frcnn)
 - Keras implementation of [Faster R-CNN with region proposal networks](https://github.com/yhenon/keras-frcnn/)
