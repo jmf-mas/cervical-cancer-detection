@@ -47,6 +47,7 @@ Settings:
 - the theano backend by default uses a 7x7 pooling region.
 
 Next steps:
+- Need to fix the following error during training: `ValueError: Negative dimension size caused by subtracting X from Y for...`
 - Cervical cancer images annotations
 - Replacement of default data set (Pascal VOC) by the cervical images.
 - Predictions on new images. This will require classification task as in [the benchmark paper](https://academic.oup.com/jnci/article/111/9/923/5272614).
